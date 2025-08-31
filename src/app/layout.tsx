@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {  Kanit, Archivo_Black,Prompt } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const archivo = Archivo_Black({
+  variable : "--font-archivo",
   subsets: ["latin"],
+  weight: ['400']
+})
+
+const kanit = Kanit({
+  variable: "--font-kanit",
+  subsets : ["thai"],
+  weight: ["200","400","300","500","600","700"]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const prompt = Prompt({
+  variable: "--font-prompt",
+  subsets : ["thai"],
+  weight: ["100","200","400","300","500","600","700"]
 });
 
 export const metadata: Metadata = {
@@ -25,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${kanit.variable}${archivo.variable} ${prompt.variable}`}
       >
         {children}
       </body>

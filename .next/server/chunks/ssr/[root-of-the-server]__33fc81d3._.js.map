@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Xenon/Desktop/FITUP/fitup/src/app/about/page.jsx"],"sourcesContent":["export default function AboutPage() {\r\n    return (\r\n        <h1>hlo</h1>\r\n    )\r\n}"],"names":[],"mappings":";;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;kBAAG;;;;;;AAEZ","debugId":null}}]
+}
