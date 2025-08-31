@@ -11,9 +11,7 @@ modules={[Pagination]}
 pagination={{clickable:true}}
 spaceBetween={20}
 slidesPerView={1}
-style={{
-"--swiper-pagination-bullet-size": "12px"
-}}
+
 >
 <SwiperSlide>
     <div className="card bg-white relative pb-6">
