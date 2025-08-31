@@ -26,6 +26,10 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+.navigator li{
+  display: inline-block;
+  margin-left: 30px;
+}
 #header.scrolled {
   background-color: black;
 }
@@ -85,6 +89,7 @@ h2 {
 }
 .card div {
   padding: 0 16;
+  height: 163px;
 }
 .card h2 {
   font-size: 2.25rem;
@@ -112,4 +117,11 @@ font-weight: 500;
 }
 .what span {
   font-family: var(--font-prompt);
+}
+
+.wrapper-of-all-three div {
+  text-align: center;
+}
+.wrapper-of-all-three h2 {
+  font-size: 30;
 }

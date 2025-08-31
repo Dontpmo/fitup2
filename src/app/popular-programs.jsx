@@ -2,7 +2,7 @@
 import Carousel from "./carousel"
 export default function PopularPrograms() {
     return (
-        <section className="  bg-gradient-to-r from-lime-200 to-transparent py-13">
+        <section id="programs" className="  bg-gradient-to-r from-lime-200 to-transparent py-13">
 
                 
                 <div className="text bg-lime-400 py-10 px-5  mx-3">

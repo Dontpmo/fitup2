@@ -15,11 +15,24 @@ export default function Home() {
   return (
     <main className="h-[4000px]">
       {/* Header */}
-      <header className={ ` fixed z-[99] w-full
+      <header className={ ` fixed z-[99] w-full flex items-center text-white
         ${scrolled? "bg-black" : "bg-transparent"}` } id="header">
         <button onClick={() => document.getElementById("home")?.scrollIntoView()} className="cursor-pointer">
           <img className="m-4" src="/images/logo.png" alt="fitup logo" />
         </button>
+        <nav>
+          <ul className="ml-20 navigator">
+            <li>
+              <a href="#home">HOME</a>
+            </li>
+              <li><a href="#aboutUs">ABOUT US</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#programs">PROGRAMS</a></li>
+              <li><a href="#plans">PRICING</a></li>
+              <li><a href="#contacts">CONTACTS</a></li>
+          
+          </ul>
+        </nav>
       </header>
 
       {/* Hero Section */}
@@ -30,16 +43,16 @@ export default function Home() {
             <span className="text-lick font-medium mr-4 font-p">PERSONAL TRAINER</span>
             <div className="w-12 h-1 border-t-2 border-green-500"></div>
           </div>
-          <h1 className="text-white text-6xl uppercase leading-20 font-bold font-a md:text-8xl">Strong body,
+          <h1 className="text-white text-6xl uppercase leading-20 font-bold font-a md:text-8xl leading-none">Strong body,
           confident <span className="text-lick">spirit!</span></h1>
           <button onClick={() => document.getElementById("form")?.scrollIntoView({behavior:"smooth"})} className="bg-lick font-p p-4 w-50 hover:bg-black hover:text-lick transition-all duration-300 cursor-pointer mt-13">ลงทะเบียนเลย</button>
                 </div>
         </section>
 
       {/* About Us Section */}
-      <section className="bg-gradient-to-r from-goodBrown to-transparent pt-[100px] pb-[100px]">
-        <div className="container-of-all flex px-3 flex-col md:flex-row">
-          <div className="text">  
+      <section id="aboutUs" className="bg-gradient-to-r from-goodBrown to-transparent pt-[100px] pb-[100px]">
+        <div className="container-of-all flex px-3 flex-col lg:flex-row items-center justify-center">
+          <div className="text md:w-[70vw]">  
             <div className="flex items-center">
               <p className="text-lick uppercase">about us</p>
               <div className="h-[0.5px] w-12 border-t-2 border-lick"></div>
@@ -53,7 +66,7 @@ export default function Home() {
 
               </p>
               <p className="font-normal leading-6">
-                เรามี โปรแกรมออกกำลังกายหลากหลาย ที่เหมาะกับทุกความต้องการ มีผู้ฝึกสอนที่เชี่ยวชาญหลายด้าน
+                เรามีโปรแกรมออกกำลังกายหลากหลายที่เหมาะกับทุกความต้องการ
               </p>
             </div>
 
@@ -78,13 +91,15 @@ export default function Home() {
           </div>
 
           {/* About Image */}
-          <div className="image bg-lick mx-3">
-            <img
-              src="/images/about.png"
-              alt="middle-aged women holding a protein shake"
-              className="relative top-3 right-3"
-            />
-          </div>
+          
+            <div className="mx-10 mx-3 w-full lg:w-[40%] flex justify-center">
+              <img
+                src="/images/about.png"
+                alt="middle-aged women holding a protein shake"
+                className=" shadow-[14px_-14px_0px_#b4d518]"
+              />
+            </div>
+          =
         </div>
       </section>
 
@@ -128,7 +143,7 @@ export default function Home() {
          </div>
         </div>
       </section>
-      <section className="our-services py-19 items-center our-services bg-radial from-goodBrown to-transparent ]">
+      <section id="services" className="our-services py-19 items-center our-services bg-radial from-goodBrown to-transparent ]">
         <div className="text ml-4">
           <div className="flex items-center">
             <p className="text-lick">Services</p><div className="h-[1px] w-6 bg-lick"></div>
@@ -183,7 +198,7 @@ export default function Home() {
             </div>
           
       </section>
-      <section  className="contacts bg-black text-white py-16">
+      <section id="contacts" className="contacts bg-black text-white py-16">
         <div className="flex items-center"><span className="text-lick">ติดต่อเรา</span><div className="w-10 h-[1px] bg-lick"></div></div>
           <h2 className="text-5xl my-15  mt-4">CONTACTS</h2>
           <div className="info flex flex-col items-center  mx-5 justify-between flex-wrap gap-10">

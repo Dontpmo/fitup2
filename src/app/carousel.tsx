@@ -4,13 +4,26 @@ import { Swiper } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination'
+import { useEffect, useState } from "react";
 export default function Carousel() {
+    const [wide, isWide] = useState(false)
+    useEffect(() => {
+        const handleResize = () => {
+            const currentwidth = window.innerWidth
+            if (currentwidth > 800) {
+                isWide(true)
+            }
+            else isWide(false)
+        }
+        window.addEventListener("resize",handleResize)
+        return () => window.removeEventListener("resize",handleResize)
+    },[])
     return (
     <Swiper 
 modules={[Pagination]}
 pagination={{clickable:true}}
 spaceBetween={20}
-slidesPerView={1}
+slidesPerView={wide? 2:1}
 
 >
 <SwiperSlide>
