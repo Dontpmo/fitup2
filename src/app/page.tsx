@@ -21,7 +21,7 @@ export default function Home() {
           <img className="m-4" src="/images/logo.png" alt="fitup logo" />
         </button>
         <nav>
-          <ul className="ml-20 navigator">
+          <ul className="ml-20 navigator hidden md:block">
             <li>
               <a href="#home">HOME</a>
             </li>
@@ -36,7 +36,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative header-content bg-[url('/images/bg-header.png')] h-[800px] flex items-center bg-cover">
+      <section id="home" className="animate-slideInUp relative header-content bg-[url('/images/bg-header.png')] h-[800px] flex items-center bg-cover">
       <div className="absolute inset-0 bg-gradient-to-r from-bact to-transparent"></div>
         <div className="relative flex flex-col text py-30 justify-center pl-5">
           <div className="flex items-center ">

@@ -19,6 +19,21 @@
   --font-a: "Archivo Black"
   
 }
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation */
+h1,h2,h3,h4,p,span,button {
+  animation: slideInUp 1.9s ease-out forwards;
+}
 html {
   scroll-behavior: smooth;
 }
