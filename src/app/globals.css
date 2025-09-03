@@ -4,20 +4,18 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-kanit: "Kanit";
-  --font-prompt:"prompt";
-  --font-archivo:"Archivo Black"
-  
+  --font-prompt: "prompt";
+  --font-archivo: "Archivo Black";
 }
 
-@theme{
-  --color-lick : #b4d518 ;
+@theme {
+  --color-lick: #b4d518;
   --color-goodBrown: rgba(180, 213, 24, 0.3);
-  --color-tik: rgba(107,118,86,0.5);
-  --color-lightTik: rgba(107,118,86,0.3);
-  --color-bact:  rgba(17, 17, 17, 0.4);
+  --color-tik: rgba(107, 118, 86, 0.5);
+  --color-lightTik: rgba(107, 118, 86, 0.3);
+  --color-bact: rgba(17, 17, 17, 0.4);
   --font-p: "prompt";
-  --font-a: "Archivo Black"
-  
+  --font-a: "Archivo Black";
 }
 @keyframes slideInUp {
   from {
@@ -31,7 +29,13 @@
 }
 
 /* Apply the animation */
-h1,h2,h3,h4,p,span,button {
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+button {
   animation: slideInUp 1.9s ease-out forwards;
 }
 html {
@@ -41,7 +45,7 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
-.navigator li{
+.navigator li {
   display: inline-block;
   margin-left: 30px;
 }
@@ -51,14 +55,15 @@ body {
 p {
   font-family: var(--font-prompt);
 }
-h3,h4 {
+h3,
+h4 {
   font-family: var(--font-prompt);
 }
 h2 {
   font-family: var(--font-archivo);
 }
 .swiper-pagination-bullet-active {
-     background-color: #b4d518 !important;
+  background-color: #b4d518 !important;
 }
 .swiper-pagination {
   margin-top: 15px;
@@ -69,15 +74,14 @@ h2 {
   font-weight: 300;
 }
 .plans h2 {
-  font-size: 40
+  font-size: 40;
 }
 .plans h3 {
   font-size: 30;
 }
-.plans li{
+.plans li {
   display: flex;
   justify-content: center;
-
 }
 .second {
   color: white;
@@ -93,7 +97,7 @@ h2 {
 }
 
 /* CAROUSEL */
-.card span{
+.card span {
   font-family: prompt;
   font-weight: 400;
   font-size: larger;
@@ -123,8 +127,7 @@ h2 {
   font-size: 35px;
   text-transform: uppercase;
   font-family: var(--font-prompt);
-font-weight: 500;
-
+  font-weight: 500;
 }
 
 .what div {
@@ -139,4 +142,15 @@ font-weight: 500;
 }
 .wrapper-of-all-three h2 {
   font-size: 30;
+}
+
+/* ft */
+.freetrial {
+  font-family: var(--font-prompt);
+}
+.freetrial input {
+  padding: 30 20;
+}
+.freetrial label {
+  margin-bottom: 10;
 }

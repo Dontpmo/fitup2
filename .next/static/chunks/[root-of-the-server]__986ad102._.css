@@ -628,6 +628,7 @@
     --color-lime-200: #d8f999;
     --color-lime-400: #9de500;
     --color-green-500: #00c758;
+    --color-gray-300: #d1d5dc;
     --color-gray-500: #6a7282;
     --color-black: #000;
     --color-white: #fff;
@@ -673,6 +674,7 @@
       --color-lime-200: color(display-p3 .872841 .974338 .642611);
       --color-lime-400: color(display-p3 .66872 .893772 .208808);
       --color-green-500: color(display-p3 .308734 .774754 .374307);
+      --color-gray-300: color(display-p3 .822033 .835264 .858521);
       --color-gray-500: color(display-p3 .421287 .446085 .504784);
     }
   }
@@ -681,8 +683,9 @@
     :root, :host {
       --color-lime-200: lab(94.0718% -22.5338 42.5238);
       --color-lime-400: lab(83.7876% -45.0447 88.4738);
-      --color-green-500: lab(70.5521% -66.5147 45.8072);
-      --color-gray-500: lab(47.7841% -.393212 -10.0268);
+      --color-green-500: lab(70.5521% -66.5147 45.8073);
+      --color-gray-300: lab(85.1236% -.612259 -3.7138);
+      --color-gray-500: lab(47.7841% -.393182 -10.0268);
     }
   }
 }
@@ -1143,6 +1146,10 @@
     margin-bottom: calc(var(--spacing) * 10);
   }
 
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
@@ -1297,6 +1304,11 @@
     margin-bottom: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
   }
 
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+
   .border-t-2 {
     border-top-style: var(--tw-border-style);
     border-top-width: 2px;
@@ -1314,6 +1326,10 @@
 
   .border-black {
     border-color: var(--color-black);
+  }
+
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
   }
 
   .border-green-500 {
@@ -1438,6 +1454,10 @@
     padding-inline: calc(var(--spacing) * 3);
   }
 
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -1448,6 +1468,10 @@
 
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
 
   .py-3 {
@@ -1623,6 +1647,10 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+
+  .text-black {
+    color: var(--color-black);
   }
 
   .text-lick {
@@ -1884,6 +1912,15 @@ h2 {
 
 .wrapper-of-all-three h2 {
   font-size: 30px;
+}
+
+.freetrial {
+  font-family: var(--font-prompt);
+}
+
+.freetrial input {
+  margin-top: 10px;
+  padding: 30px 20px;
 }
 
 @property --tw-rotate-x {
