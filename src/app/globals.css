@@ -154,3 +154,16 @@ h2 {
 .freetrial label {
   margin-bottom: 10;
 }
+.ft h1,h2 {
+  font-family: var(--font-prompt);
+  margin-bottom: 16px;
+}
+.head {
+  color: #b4d518;
+  font-size: small;
+}
+.line {
+  height: 0.5px;
+  width: 34px;
+  background-color: #b4d518;
+}
