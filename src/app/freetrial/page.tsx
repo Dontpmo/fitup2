@@ -1,6 +1,6 @@
 export default function Ft() {
   return (
-    <section>
+    <section className="ft">
       <img src="images/about.png" alt="" />
       <div className="px-5 flex flex-col items-center freetrial">
         <h1 className="text-4xl mt-10">เริ่มต้นทดลองเล่นฟรี 1 วัน</h1>
@@ -43,13 +43,33 @@ export default function Ft() {
             </p>
             <button
               type="submit"
-              className="bg-lick text-white text-bold text-xl px-8 py-4 my-5 font-kanit cursor-pointer"
+              className=" w-full bg-lick text-white text-bold text-xl px-8 py-4 my-5 font-kanit cursor-pointer"
             >
               ลงทะเบียน
             </button>
+
           </form>
         </div>
-      </div>
+        </div>
+
+        <div className="mt-10">
+       
+          <img src="/images/howft.png" alt="" />
+          <div className="px-5">
+            <div className="flex items-center my-2">
+                <p className="head">เข้าได้ทุกโซนในคลับ</p><div className="line"></div>
+              </div>
+            
+              <div>
+            
+                <h2 className="text-4xl">คุณสามารถใช้สิทธิทดลองเล่นได้อย่างไร?</h2>
+                <p>คุณสามารถจองและเข้าคลาสออกกำลังกายได้ทุกคลาส หรือจะเล่นโซนยิมออกกำลังกาย ผ่อนคลายไปด้วยสระว่ายน้ำ สระสปา ห้องสตรีม พร้อมค้นหาและสนุกไปกับคลาสออกกำลังกายออนไลน์ที่คุณชอบได้ทุกที่ทุกเวลา ทั้งหมดนี้เราให้คุณทดลองได้ฟรี และคุณสามารถใช้แบบไหนก็ได้ที่ใช่คุณ</p>
+              </div>
+            
+          </div>
+        </div>
+      
     </section>
   );
 }
+
