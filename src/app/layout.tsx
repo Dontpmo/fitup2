@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {  Kanit, Archivo_Black,Prompt } from "next/font/google";
 import "./globals.css";
+import Topbar from "./components/topbar";
 
 const archivo = Archivo_Black({
   variable : "--font-archivo",
@@ -32,9 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
         className={`${kanit.variable}${archivo.variable} ${prompt.variable}`}
       >
+        <Topbar/>
         {children}
       </body>
     </html>

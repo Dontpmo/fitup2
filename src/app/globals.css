@@ -31,9 +31,12 @@
 }
 
 /* Apply the animation */
-h1,h2,h3,h4,p,span,button {
+/* * {
   animation: slideInUp 1.9s ease-out forwards;
 }
+.no-ani {
+  animation: none;
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -139,4 +142,22 @@ font-weight: 500;
 }
 .wrapper-of-all-three h2 {
   font-size: 30;
+}
+
+
+/* freetrial */
+.free-trial input{
+  border-color: rgb(190, 190, 190);
+  border-radius: 1px;
+  padding: 7 ;
+}
+
+/* drawer */
+.drawer a {
+  font-family: var(--font-prompt);
+  
+}
+.drawer a:hover{
+  text-decoration-line: underline;
+  text-decoration-color: #b4d518;
 }
