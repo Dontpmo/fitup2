@@ -14,7 +14,7 @@ export default function Plans() {
                     <ol className='space-y-10 w-full'>
                         <li className='flex gap-2 '>
                             <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
-                            <p className='text-sm '>เข้าใช้บริการได้ 24 ชั่วโมง</p>
+                            <p className='text-sm '>เข้าคลับสัปดาห์ละ 1 ครั้ง</p>
                         </li>
                         <li className='flex gap-2'>
                             <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
@@ -22,7 +22,7 @@ export default function Plans() {
                         </li>
                         <li className='flex gap-2'>
                             <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
-                            <p className='text-sm'>ฟรี! Meal plan สำหรับคุณโดยเฉพาะ</p>
+                            <p className='text-sm'>สามารถเก็บจำนวนครั้งที่ยังไม่ใช้บริการไว้ได้</p>
                         </li>
                         <li className='flex gap-2'>
                             <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
@@ -34,12 +34,9 @@ export default function Plans() {
                         </li>
                         <li className='flex gap-2'>
                             <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
-                            <p className='text-sm'>ใส่เพิ่ม</p>
+                            <p className='text-sm'>สัญญาขั้นต่ำแค่ 12 สัปดาห์</p>
                         </li>
-                        <li className='flex gap-2'>
-                            <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
-                            <p className='text-sm'>ใส่เพิ่ม</p>
-                        </li>
+                        
                         
                     
                     </ol>
@@ -66,7 +63,8 @@ export default function Plans() {
                         </li>
                         <li className='flex gap-2'>
                             <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
-                            <p className='font-archivo text-sm'>Training video</p>
+                            <p className='font-archivo text-sm'>
+เข้าคลับและเข้าคลาสได้ไม่จำกัดจำนวนครั้ง</p>
                         </li>
                         <li className='flex gap-2'>
                             <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
@@ -74,12 +72,9 @@ export default function Plans() {
                         </li>
                         <li className='flex gap-2'>
                             <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
-                            <p className='text-sm'>ใส่เพิ่ม</p>
+                            <p className='text-sm'>สัญญาขั้นต่ำแค่ 12 เดือน</p>
                         </li>
-                        <li className='flex gap-2'>
-                            <FontAwesomeIcon icon={faCheck} className='text-lick w-5 h-5'/>
-                            <p className='text-sm'>ใส่เพิ่ม</p>
-                        </li>
+                        
                         
                     
                     </ol>
@@ -123,6 +118,8 @@ export default function Plans() {
                     </ol>
                 
             </div>
+            <a href="/membership" className='flex items-center justify-center bg-lick px-4 py-6 hover:bg-black hover:text-lick transition-all duration-500 w-full text-center mx-5 h-2'>เปรียนเทียบรูปแบบสมาชิก</a>
         </div>
+        
     </section>)
 }
