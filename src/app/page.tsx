@@ -19,46 +19,7 @@ export default function Home() {
   return (
     <main className="h-[4000px]">
       {/* Header */}
-      <header
-        className={` fixed z-[99] w-full flex items-center text-white justify-between px-5 
-        ${ "bg-black" }`}
-        id="header"
-      >
-        <a href="/">
-          <img className="m-4 w-30 h-5" src="/images/logo.png" alt="fitup logo" />
-        </a>
-        <nav className='flex'>
-          <ul className="ml-20 navigator hidden lg:inline">
-            <li>
-              <a href="#home">HOME</a>
-            </li>
-            <li>
-              <a href="#aboutUs">ABOUT US</a>
-            </li>
-            <li>
-              <a href="#services">SERVICES</a>
-            </li>
-            <li>
-              <a href="#programs">PROGRAMS</a>
-            </li>
-            <li>
-              <a href="#plans">PRICING</a>
-            </li>
-            <li>
-              <a href="#contacts">CONTACTS</a>
-            </li>
-          </ul>
-          <a
-            className=" px-4 py-2 ml-20 text-black bg-lime-500 hover:bg-lime-600"
-            href="/freetrial"
-          >
-            ทดลองเล่นฟรี
-          </a>
-          <button >
-            <FontAwesomeIcon icon={faNavicon} className="fa-2x cursor-pointer"/>  
-          </button>
-        </nav>
-      </header>
+     
 
       {/* Hero Section */}
       <section
@@ -160,60 +121,60 @@ export default function Home() {
       </section>
       <PopularPrograms />
       
-      <section className="ft">
-      <img src="images/about.png" alt="" />
-      <div className="px-5 flex flex-col freetrial py-6">
-        <div className="flex items-center pb-5">
-          <p className="head">ทดลองเล่น</p><div className="line"></div>
-        </div>
-        <h1 className="text-4xl ">เริ่มต้นทดลองเล่นฟรี 1 วัน</h1>
-        <h6 className="text-md mt-2 mb-12">
-          กรอกรายละเอียดด้านล่าง เพื่อรับสิทธิ์ทดลองเล่นแบบไม่มีค่าใช้จ่าย
-          และพบกับผู้ฝึกสอนส่วนตัวมืออาชีพของเราที่คลับใกล้บ้านท่าน
-        </h6>
-
-        <div className="relative text-sm ">
-          <form action="POST" className=" text-sm relative  text-black form">
-            <label htmlFor="" className="font-semibold">ชื่อและนามสกุล</label>
-            <input
-              type="text"
-              className="border-1 border-gray-300 py-2 px-2 mb-4 w-full focus:border-lick focus:outline-hidden transition-all duration-600 ease-out "
-            />
-            <label htmlFor="">เบอร์มือถือ</label>
-            <input
-              type="text"
-              className="border-1 border-gray-300 px-2 py-2 mb-4 w-full focus:border-lick focus:outline-hidden transition-all duration-600 ease-out"
-            />
-            <label htmlFor="">อีเมล</label>
-            <input
-              type="text"
-              className="border-1 border-gray-300 px-2 py-2 mb-4 w-full focus:border-lick focus:outline-hidden transition-all duration-600 ease-out"
-            />
-            <label htmlFor="">คลับใกล้ฉัน</label>
-            <input
-              type="text"
-              className="border-1 border-gray-300 px-2 py-2 mb-4 w-full focus:border-lick focus:outline-hidden transition-all duration-600 ease-out"
-            />
-            <p>
-              การเข้าทดลองใช้บริการฟรีสำหรับผู้ที่เข้าใช้ครั้งแรกเท่านั้น
-              ซึ่งเป็นคนไทยที่มีบัตรประชาชน
-              หรือชาวต่างชาติที่อาศัยอยู่ในประเทศไทยที่มีวีซ่าระยะยาว
-              ในการลงทะเบียนรับสิทธิ์ทดลองเล่นนี้
-              ถือว่าท่านยอมรับนโยบายข้อมูลส่วนบุคคล
-              และยินยอมในการรับข้อมูลทางการตลาดของเรา
-              ซึ่งท่านสามารถยกเลิกความยินยอมได้ตลอดเวลา คลิก ที่นี่
-              เพื่อดูข้อเงื่อนไขและข้อกำหนดฉบับเต็ม
-            </p>
-            <button
-              type="submit"
-              className=" w-full bg-lick text-white text-bold text-xl px-8 py-4 my-5 font-kanit cursor-pointer"
-            >
-              ลงทะเบียน
-            </button>
-
-          </form>
-        </div>
-        </div>
+      <section className="ft pb-10">
+      <div className="lg:flex">
+        <div className="flex justify-center"><img src="images/about.png" className="w-full h-auto" alt="" /></div>
+        <div className="px-5 flex flex-col freetrial py-6">
+          <div className="flex items-center pb-5">
+            <p className="head">ทดลองเล่น</p><div className="line"></div>
+          </div>
+          <h1 className="text-4xl ">เริ่มต้นทดลองเล่นฟรี 1 วัน</h1>
+          <h6 className="text-md mt-2 mb-12">
+            กรอกรายละเอียดด้านล่าง เพื่อรับสิทธิ์ทดลองเล่นแบบไม่มีค่าใช้จ่าย
+            และพบกับผู้ฝึกสอนส่วนตัวมืออาชีพของเราที่คลับใกล้บ้านท่าน
+          </h6>
+          <div className="relative text-sm ">
+            <form action="POST" className=" text-sm relative  text-black form md:w-[50vw]">
+              <label htmlFor="" className="font-semibold">ชื่อและนามสกุล</label>
+              <input
+                type="text"
+                className="border-1 border-gray-300 py-2 px-2 mb-4 w-full focus:border-lick focus:outline-hidden transition-all duration-600 ease-out "
+              />
+              <label htmlFor="">เบอร์มือถือ</label>
+              <input
+                type="text"
+                className="border-1 border-gray-300 px-2 py-2 mb-4 w-full focus:border-lick focus:outline-hidden transition-all duration-600 ease-out"
+              />
+              <label htmlFor="">อีเมล</label>
+              <input
+                type="text"
+                className="border-1 border-gray-300 px-2 py-2 mb-4 w-full focus:border-lick focus:outline-hidden transition-all duration-600 ease-out"
+              />
+              <label htmlFor="">คลับใกล้ฉัน</label>
+              <input
+                type="text"
+                className="border-1 border-gray-300 px-2 py-2 mb-4 w-full focus:border-lick focus:outline-hidden transition-all duration-600 ease-out"
+              />
+              <p>
+                การเข้าทดลองใช้บริการฟรีสำหรับผู้ที่เข้าใช้ครั้งแรกเท่านั้น
+                ซึ่งเป็นคนไทยที่มีบัตรประชาชน
+                หรือชาวต่างชาติที่อาศัยอยู่ในประเทศไทยที่มีวีซ่าระยะยาว
+                ในการลงทะเบียนรับสิทธิ์ทดลองเล่นนี้
+                ถือว่าท่านยอมรับนโยบายข้อมูลส่วนบุคคล
+                และยินยอมในการรับข้อมูลทางการตลาดของเรา
+                ซึ่งท่านสามารถยกเลิกความยินยอมได้ตลอดเวลา คลิก ที่นี่
+                เพื่อดูข้อเงื่อนไขและข้อกำหนดฉบับเต็ม
+              </p>
+              <button
+                type="submit"
+                className=" w-full bg-lick text-white text-bold text-xl px-8 py-4 my-5 font-kanit cursor-pointer"
+              >
+                ลงทะเบียน
+              </button>
+            </form>
+          </div>
+          </div>
+      </div>
       </section>
       <section id="contacts" className="contacts bg-black text-white py-16">
         <img src="images/logo.png" alt="" />
