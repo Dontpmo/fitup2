@@ -118,7 +118,7 @@ export default function Plans() {
                     </ol>
                 
             </div>
-            <a href="/membership" className='flex items-center justify-center bg-lick px-4 py-6 hover:bg-black hover:text-lick transition-all duration-500 w-full text-center mx-5 h-2'>เปรียนเทียบรูปแบบสมาชิก</a>
+            <a href="/membership" className='flex items-center justify-center mt-10 bg-lick px-4 py-6 hover:bg-black hover:text-lick transition-all duration-500 w-full text-center mx-5 h-2'>เปรียนเทียบรูปแบบสมาชิก</a>
         </div>
         
     </section>)
