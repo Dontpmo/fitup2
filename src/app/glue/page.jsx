@@ -1,8 +1,8 @@
-import Header from "../header";
+
 export default function Ft() {
   return (
     <>
-    <Header/>
+  
     <section className="ft">
       <img src="images/about.png" alt="" />
       <div className="px-5 flex flex-col freetrial py-6">
