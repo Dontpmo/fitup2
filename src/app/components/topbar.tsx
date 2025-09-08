@@ -11,40 +11,38 @@ export default function Topbar() {
         ${"bg-black"}`}
       id="header"
     >
-      <a className="cursor-pointer">
-        <img className="m-4" src="/images/logo.png" alt="fitup logo" />
-      </a>
-      <nav>
-        <ul className="ml-15 navigator hidden md:block">
-          <li>
-            <a href="#home">HOME</a>
-          </li>
-          <li>
-            <a href="#aboutUs">ABOUT US</a>
-          </li>
-          <li>
-            <a href="#services">SERVICES</a>
-          </li>
-          <li>
-            <a href="#programs">PROGRAMS</a>
-          </li>
-          <li>
-            <a href="#plans">PRICING</a>
-          </li>
-          <li>
-            <a href="#contacts">CONTACTS</a>
-          </li>
-        </ul>
-      </nav>
-      <a
-        href="/freetrial"
-        className=" ml-[20%] md:ml-[40%] border-white border-2 px-4 py-2 cursor-pointer hover:bg-white hover:text-black"
-      >
-        Free trial
-      </a>
-      <button onClick={() => setToggled((prev) => !prev)}>
-        {toggled?<FontAwesomeIcon icon={faX}/>: <FontAwesomeIcon icon={faBars} />}
-      </button>
+      <div className="flex justify-between w-full items-center">
+        <a className="cursor-pointer" href="/home">
+          <img className="m-4" src="/images/logo.png" alt="fitup logo" />
+        </a>
+        <nav>
+          <ul className="ml-15 navigator hidden md:block">
+            <li>
+              <a href="#services">SERVICES</a>
+            </li>
+            <li>
+              <a href="#programs">PROGRAMS</a>
+            </li>
+            <li>
+              <a href="#plans">PRICING</a>
+            </li>
+            <li>
+              <a href="#contacts">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+        
+          <a
+            href="/freetrial"
+            className=" ml-[20%] md:ml-[10%] bg-lick text-white px-5 h-10 cursor-pointer flex items-center justify-center  hover:text-black"
+          >
+            ทดลองเล่นฟรี
+          </a>
+      
+        <button onClick={() => setToggled((prev) => !prev)}>
+          {toggled?<FontAwesomeIcon className="fa-2x cursor-pointer" icon={faX}/>: <FontAwesomeIcon className="fa-2x cursor-pointer" icon={faBars} />}
+        </button>
+      </div>
       
     </header>
     <div className={`drawer w-full flex flex-col text-white justify-center items-center bg-black fixed h-screen z-[99] transform transition-all duration-200  ${toggled? "translate-y-0" : "-translate-y-full"}`}>
@@ -60,7 +58,7 @@ export default function Topbar() {
         </div>
         <div className="flex flex-col text-center ">
           <a href="">
-            <FontAwesomeIcon icon={faPerson}/> เข้าสู่ระบบสมาชิก
+            <FontAwesomeIcon icon={faPerson} className="fa-lg"/> เข้าสู่ระบบสมาชิก
           </a>
           <a className="pt-10" href="">ติดต่อเรา</a>
         </div>
