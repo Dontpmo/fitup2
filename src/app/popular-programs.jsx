@@ -3,7 +3,7 @@ import Carousel from "./carousel"
 import Plans from "./Plans";
 export default function PopularPrograms() {
     return (
-        <section id="programs" className="  bg-radient from-goodbrown to-transparent py-13">
+        <section id="programs" className="  bg-radient from-goodbrown to-transparent pt-13">
 
                 
                 <div className="text bg-lime-400 py-10 px-5  mx-3">
