@@ -12,11 +12,11 @@ export default function Topbar() {
       id="header"
     >
       <div className="flex justify-between w-full items-center">
-        <a className="cursor-pointer" href="/home">
+        <a className="cursor-pointer" href="/">
           <img className="m-4" src="/images/logo.png" alt="fitup logo" />
         </a>
         <nav>
-          <ul className="ml-15 navigator hidden md:block">
+          <ul className="ml-15 navigator hidden lg:block">
             <li>
               <a href="#services">SERVICES</a>
             </li>
