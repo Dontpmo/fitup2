@@ -95,7 +95,7 @@ export default function Home() {
             <h2 className="text-center">ทุกอย่าง<br /><span className="text-lick underline">ในราคาเดียว</span></h2>
             <div><a href="" className="link">ดูรายละเอียดเพิ่มเติม</a></div>
           </div>
-          <article className=" bg-white flex flex-col items-center  pb-10">
+          <article className=" bg-white flex flex-col items-center  py-10">
             <img src="images/pilatis.webp" alt="" />
             <div className="px-8">
               <h2 className="uppercase mt-5">พิลาติส</h2>
