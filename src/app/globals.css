@@ -186,3 +186,14 @@ h2 {
   background-color: #171717;
   color: #b4d518;
 }
+
+.services img {
+  width: 800px;
+  height: 480px;
+}
+@media screen and (max-width:872px) {
+  .services img {
+    width: auto;
+    height: auto;
+  }
+}
