@@ -15,7 +15,7 @@ export default function Topbar() {
       <div className="flex justify-between w-full items-center">
         <Link className="cursor-pointer" href="/">
           <img className="m-4" src="/images/logo.png" alt="fitup logo" />
-        </a>
+        </Link>
         <nav>
           <ul className="ml-15 navigator hidden lg:block">
             <li>
