@@ -34,7 +34,7 @@ export default function Topbar() {
         
           <a
             href="/freetrial"
-            className=" ml-[20%] md:ml-[10%] bg-lick text-white px-5 h-10 cursor-pointer flex items-center justify-center  hover:text-black"
+            className=" ml-[20%] md:ml-[10%] bg-lick text-white px-5 h-10 cursor-pointer flex items-center justify-center  hover:text-black text-nowrap"
           >
             ทดลองเล่นฟรี
           </a>
