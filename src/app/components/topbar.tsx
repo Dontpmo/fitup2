@@ -2,6 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faPerson, faX } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Link from "next/link";
 export default function Topbar() {
   const [toggled, setToggled] = useState(false);
   return (
@@ -12,7 +13,7 @@ export default function Topbar() {
       id="header"
     >
       <div className="flex justify-between w-full items-center">
-        <a className="cursor-pointer" href="/">
+        <Link className="cursor-pointer" href="/">
           <img className="m-4" src="/images/logo.png" alt="fitup logo" />
         </a>
         <nav>
@@ -34,7 +35,7 @@ export default function Topbar() {
         
           <a
             href="/freetrial"
-            className=" ml-[20%] md:ml-[10%] bg-lick text-white px-5 h-10 cursor-pointer flex items-center justify-center  hover:text-black text-nowrap"
+            className=" ml-[20%] md:ml-[10%] bg-lick text-white px-5 h-10 cursor-pointer flex items-center justify-center text-nowrap  hover:text-black"
           >
             ทดลองเล่นฟรี
           </a>
