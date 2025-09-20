@@ -24,7 +24,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="animate-slideInUp relative header-content bg-[url('/images/bg-header.png')] h-[800px] flex items-center bg-cover"
+        className="animate-slideInUp relative header-content bg-[url('/images/bg-header.png')] h-[800px] flex items-center bg-cover mt-10"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-bact to-transparent"></div>
         <div className="relative flex flex-col text py-30 justify-center pl-5">
@@ -34,8 +34,8 @@ export default function Home() {
             </span>
             <div className="w-12 h-1 border-t-2 border-green-500"></div>
           </div>
-          <h1 className="text-white text-6xl uppercase leading-20 font-bold font-a md:text-8xl leading-none">
-            Strong body, confident <span className="text-lick">spirit!</span>
+          <h1 className="font-p text-white text-6xl uppercase leading-20 font-bold md:text-8xl leading-none">
+            สุขภาพดี <span className="text-lick">เริ่มต้นที่นี่</span>
           </h1>
           <button
             onClick={() =>
